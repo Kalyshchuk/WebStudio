@@ -1,0 +1,59 @@
+.desc {
+    padding-bottom: 94px;
+}
+
+.desc-one {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.work {
+    display: flex;
+    /* іконки розприділяються рівномірно по ширині сторінки */
+    justify-content: space-between;
+}
+
+.work .work__foto {
+    position: relative;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.work {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.work__desktop {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.applications {
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

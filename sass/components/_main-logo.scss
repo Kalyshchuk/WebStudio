@@ -1,0 +1,25 @@
+.main-nav__name {
+    color: var(--logo-second-coolor);
+}
+
+.main-nav__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    color: var(--logo-main-color);
+}
+
+.main-nav__logo {
+    text-decoration: none;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+}
