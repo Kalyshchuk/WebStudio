@@ -4,8 +4,8 @@
 }
 
 .client__company {
-    margin: 0;
-    margin-bottom: 50px;
+    // margin: 0;
+    // margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -15,19 +15,26 @@
 }
 
 .companys {
-    display: flex;
+    // display: flex;
     list-style: none;
-    margin: 0;
+    // margin: 0;
     padding: 0;
     gap: 30px;
+
+    @media screen and (min-width: 767.99px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
+
+
 
 .companys__logo {
     flex-basis: calc((100% - 150px) / 6);
 }
 
 .companys__company {
-    display: flex;
+    // display: flex;
     height: 92px;
     border: 1px solid #AFB1B8;
     color: rgba(175, 177, 184, 1);
@@ -38,7 +45,7 @@
 }
 
 .company {
-    display: flex;
+    // display: flex;
     height: auto;
     fill: currentColor
 }

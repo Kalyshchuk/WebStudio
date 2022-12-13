@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--main-color);
+    color: var(--main-color); 
 }
 
 * {
@@ -8,9 +8,22 @@ body {
 }
 
 .container {
+    // phone screen 480px
+    max-width: 479.99px;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+
+    // tablet screen 768px
+    @media screen and (min-width: 767.99px) {
+        max-width: 767.99px;
+    }
+    // desctop screen 1200px
+    @media screen and (min-width: 1199.99px) {
+        max-width: 1199.99px;
+    }
 }
+
+
+

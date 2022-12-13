@@ -25,7 +25,7 @@
     transform: translate(-50%, -50%) rotate(0);
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    width: 528px;
+    // width: 528px;
 
     background-color: #ffffff;
     border-radius: 4px;
@@ -36,8 +36,8 @@
 }
 
 .main-cross {
-    display: flex;
-    width: 30px;
+    // display: flex;
+    // width: 30px;
     height: 30px;
     position: absolute;
     top: 8px;
@@ -62,8 +62,8 @@
 }
 
 .modal-subtitle {
-    margin: 0;
-    margin-bottom: 12px;
+    // margin: 0;
+    // margin-bottom: 12px;
 
     font-weight: 700;
     font-size: 20px;
@@ -74,7 +74,7 @@
 }
 
 .modal-input {
-    width: 100%;
+    // width: 100%;
     height: 40px;
     padding-left: 45px;
     border-radius: 4px;
@@ -91,10 +91,10 @@
 }
 
 .modal-lable {
-    display: block;
-    width: 100%;
+    // display: block;
+    // width: 100%;
     padding: 0;
-    margin-bottom: 4px;
+    // margin-bottom: 4px;
 
     font-weight: 400;
     font-size: 12px;
@@ -105,12 +105,12 @@
 
 .input-wrapper {
     position: relative;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 }
 
-.input-wrapper input {
-    margin-bottom: 0;
-}
+// .input-wrapper input {
+//     margin-bottom: 0;
+// }
 
 .input-wrapper {
     &:focus-within .modal-input {
@@ -144,14 +144,14 @@
 
 .comment {
     height: 120px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 }
 
 .modal-textarea {
-    width: 100%;
+    // width: 100%;
     height: 120px;
     border-radius: 4px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     resize: none;
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -180,14 +180,14 @@
     }
 }
 
-.check-line {
-    margin-bottom: 30px;
-}
+// .check-line {
+//     margin-bottom: 30px;
+// }
 
 /* погоджуюся з розсилкою */
 
 .checkbox-agree {
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
 
@@ -200,16 +200,16 @@
 
 .checkbox-agree::before {
     content: '';
-    margin-right: 8px;
-    display: flex;
-    width: 14px;
+    // margin-right: 8px;
+    // display: flex;
+    // width: 14px;
     height: 13px;
     border: 2px solid #000000;
     border-radius: 2px;
 }
 
 .button-size {
-    width: 200px;
+    // width: 200px;
     height: 50px;
     align-items: center;
     justify-content: center;
