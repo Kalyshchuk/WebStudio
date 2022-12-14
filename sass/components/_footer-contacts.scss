@@ -9,7 +9,7 @@
 }
 
 .footer .logo {
-    // display: block;
+    align-items: center;
     // margin-bottom: 20px;
 
     font-family: 'Raleway';
@@ -30,11 +30,11 @@
     color: var(--logo-last-color);
 }
 
-// .address-list {
-//     display: block;
-//     margin-top: 0;
-//     margin-bottom: 0;
-// }
+.address-list {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 .address-list .map {
     &:hover,
@@ -116,23 +116,23 @@
 /* іконкі футера */
 
 .contacts {
-    // display: flex;
+    display: flex;
     align-items: baseline;
 }
 
 // .contacts-address {
-//     margin-right: 70px;
+    
 // }
 
 .lists {
-    // display: flex;
-    // margin: 0;
+    display: flex;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .networks {
-    // width: 44px;
+    width: 44px;
     height: 44px;
     border-radius: 50%;
     // margin-right: 10px;
@@ -154,8 +154,8 @@
 
 .instagram {
     height: 100%;
-    // width: 100%;
-    // display: flex;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
@@ -169,14 +169,14 @@
 }
 
 .email {
-    // width: 358px;
+    width: 358px;
     height: 50px;
     padding: 0;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: var(--section-background-color);
     border-radius: 4px;
-    // margin-right: 12px;
+    margin-right: 12px;
     font-style: normal;
     font-size: 20px;
     line-height: 1.71;

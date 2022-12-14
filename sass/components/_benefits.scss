@@ -2,18 +2,22 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    // @media screen and (min-width: 1199.99px) {
+    // @media screen and (min-width: 1199x) {
     //     width: 1199.99px;
     // }
 }
 
 .benefits {
-    margin: 0;
+    margin: -15px;
     padding-left: 0;
     
-    @media screen and (min-width: 767.99px) {
+    @media screen and (min-width: 767px) {
         display: flex;
         flex-wrap: wrap;
+        margin: -15px;
+    }
+    @media screen and (min-width: 1199px) {
+        margin: -30px;
     }
 }
 
@@ -23,15 +27,21 @@
         }
 }
 
-@media screen and (min-width: 767.99px) {
+@media screen and (min-width: 767px) {
     .benefits__items {
-        flex-basis: 50%;
-        margin-right: 15px;
-        margin-bottom: 30px;
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
     }
 }
 
-@media screen and (min-width: 1199.99px) {
+@media screen and (mix-width: 1199px) {
+    .benefits__items {
+        width: calc((100% - 8 * 15px) / 4);
+        width: 15px;
+    }
+}
+
+@media screen and (min-width: 1199px) {
     .benefits__items {
         flex-basis: 25%;
     }

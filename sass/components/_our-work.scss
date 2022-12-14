@@ -1,10 +1,16 @@
 .desc {
+    @media (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.desc {
     padding-bottom: 94px;
 }
 
 .desc-one {
-    // margin: 0;
-    // margin-bottom: 50px;
+    margin: 0;
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -14,7 +20,8 @@
 }
 
 .work {
-    // display: flex;
+    display: flex;
+    margin: 0;
     /* іконки розприділяються рівномірно по ширині сторінки */
     justify-content: space-between;
 }
@@ -24,20 +31,20 @@
 }
 
 img {
-    // display: block;
+    display: block;
     // width: 100%;
     height: auto;
 }
 
 .work {
     padding-left: 0;
-    // margin-bottom: 0;
-    // margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .work__desktop {
-    // display: flex;
-    // width: 100%;
+    display: flex;
+    width: 100%;
     height: 70px;
     position: absolute;
     bottom: 0;
@@ -48,7 +55,7 @@ img {
 }
 
 .applications {
-    // margin: 0;
+    margin: 0;
 
     font-weight: 700;
     font-size: 14px;
