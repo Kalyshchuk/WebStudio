@@ -9,14 +9,15 @@
 }
 
 .footer .logo {
-    align-items: center;
-    // margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 28px;
 
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
 
     color: var(--logo-main-color);
@@ -33,33 +34,12 @@
 .address-list {
     display: block;
     margin-top: 0;
-    margin-bottom: 0;
-}
-
-.address-list .map {
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-}
-
-.address-list .mail {
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-}
-
-.address-list .tel {
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
+    margin-bottom: 60px;
 }
 
 .footer .map {
-    // display: block;
-    // margin-bottom: 9px;
+    display: block;
+    margin-bottom: 8px;
 
     font-style: normal;
     font-weight: 400;
@@ -74,35 +54,70 @@
     text-decoration: none;
 }
 
-.mail {
-    text-decoration: none;
+.address-list .map {
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .mail {
     display: block;
-    // margin-bottom: 9px;
+    margin-bottom: 8px;
+
     font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+
     color: var(--address-contact-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail {
+    text-decoration: none;
+}
+
+.address-list .mail {
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .tel {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--address-contact-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list .tel {
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .tel {
     text-decoration: none;
 }
 
+.freand {
+    display: block;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
 .slogan {
-    // margin: 0;
-    // margin-bottom: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
 
     font-weight: 700;
     font-size: 14px;
@@ -116,31 +131,32 @@
 /* іконкі футера */
 
 .contacts {
-    display: flex;
-    align-items: baseline;
+    display: block;
+    align-items: center;
 }
 
-// .contacts-address {
-    
-// }
+.contacts-address {
+    text-align: center;
+}
 
 .lists {
     display: flex;
     margin: 0;
     padding: 0;
+    justify-content: center;
     list-style: none;
 }
 
 .networks {
     width: 44px;
     height: 44px;
+    margin-right: 10px;
     border-radius: 50%;
-    // margin-right: 10px;
 }
 
-// .networks:last-child {
-//     margin-right: 0;
-// }
+.networks:last-child {
+    margin-right: 0;
+}
 
 .instagram {
     &:hover {
@@ -169,18 +185,20 @@
 }
 
 .email {
-    width: 358px;
+    width: 100%;
     height: 50px;
+    margin-bottom: 20px;
     padding: 0;
     padding-left: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: var(--section-background-color);
     border-radius: 4px;
-    margin-right: 12px;
+
     font-style: normal;
     font-size: 20px;
     line-height: 1.71;
+
     color: #757575;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--section-background-color);
 }
 
 .email {
@@ -190,7 +208,7 @@
 }
 
 .telegram {
-    // display: inline-flex;
+    display: flex;
     align-items: center;
     padding: 10px 32px;
 }
@@ -201,5 +219,5 @@
 
 .icon-telegram {
     fill: #ffffff;
-    // margin-left: 10px;
+    margin-left: 10px;
 }

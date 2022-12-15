@@ -9,8 +9,8 @@
     margin-bottom: 30px;
 
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -23,10 +23,10 @@
     margin-bottom: 0;
 }
 
-// .professionals {
-//     margin-top: 30px;
-//     margin-bottom: 16px;
-// }
+.professionals {
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
 
 // .excerpt {
 //     margin: 0;
@@ -50,6 +50,9 @@
 // }
 
 .team-item .excerpt {
+    margin: 0;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -58,11 +61,11 @@
 }
 
 .subject {
-    // margin: 0;
+    margin: 0;
 
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
+    font-size: 14px;
+    line-height: 1.35;
     text-align: center;
 
     color: var(--second-color);
