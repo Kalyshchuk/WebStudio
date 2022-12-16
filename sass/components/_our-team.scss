@@ -39,15 +39,20 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    // @media screen and (min-width: 767px) {
+    //     background-image: url(../../images/team.jpg/img1_354.jpg);
+    // }
 }
 
-// .card {
-//     margin-right: 30px;
-// }
 
-// .card:last-child {
-//     margin-right: 0;
-// }
+.card {
+    margin-bottom: 30px;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
 
 .team-item .excerpt {
     margin: 0;

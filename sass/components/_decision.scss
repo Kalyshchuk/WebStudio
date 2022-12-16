@@ -1,12 +1,17 @@
 .section {
+    // mobile screen
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
     background-color: var(--section-background-color);
-    // mobile foto
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url("../images\fone_mobile.jpg\Шапка_mob@1x.jpg");
+    // tablet screen
+    @media screen and (min-width: 767px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
 }
 
 .section__title {
@@ -22,6 +27,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    // desctop screen
+    @media screen and (min-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .overlay {
