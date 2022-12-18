@@ -4,9 +4,18 @@
     padding-bottom: 200px;
     text-align: center;
     background-color: var(--section-background-color);
+    // background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    //         rgba(47, 48, 58, 0.4)),
+    //     url("../images\fone_mobile.jpg\Шапка_mob@1x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../images\fone_mobile.jpg\Шапка_mob@1x.jpg");
+            url(../../images/fone-mobile.jpg/Header-mob@1x.jpg);
+    
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images\fone_mobile.jpg\Header_mob@2x.png);
+        }
     // tablet screen
     @media screen and (min-width: 767px) {
         padding-top: 118px;

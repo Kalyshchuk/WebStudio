@@ -1,58 +1,37 @@
 .strong {
     padding-top: 60px;
     padding-bottom: 60px;
-
-    // @media screen and (min-width: 1199x) {
-    //     width: 1199.99px;
-    // }
 }
 
 .benefits {
-    margin: -15px;
+    margin: 0;
     padding-left: 0;
-    
-    @media screen and (min-width: 767.98px) {
+    // screen tablet
+    @media screen and (min-width: 767px) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
     }
+}
 
-    @media screen and (min-width: 1199px) {
-        margin: -30px;
+.benefits__items {
+    margin-bottom: 30px;
+    // tablet screen
+    @media screen and (min-width: 767px) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
     }
-}
-
-@media screen and (max-width: 1199px) {
-    .benefits__items:not(:last-child) {
-            margin-bottom: 30px;
-        }
-}
-
-@media screen and (min-width: 767px) {
-    .benefits__items {
-        width: calc((100% - 2 * 30px) / 2);
+    // desctop screen
+    @media screen and (min-width: 1199px) {
+        width: calc((100% - 8 * 15px) / 4);
         margin: 15px;
     }
 }
 
-@media screen and (mix-width: 1199px) {
-    .benefits__items {
-        width: calc((100% - 8 * 15px) / 4);
-        width: 15px;
-    }
+.benefits__items:last-child {
+    margin-bottom: 0;
 }
 
-@media screen and (min-width: 1199px) {
-    .benefits__items {
-        flex-basis: 25%;
-    }
-}
-
-
-
-// .benefits__items:last-child {
-//     margin-right: 0;
-// }
 
 .benefits__antenna {
     display: flex;
@@ -66,7 +45,7 @@
 }
 
 .antenna {
-    // display: flex;
+    display: flex;
     height: auto;
 }
 

@@ -22,13 +22,16 @@
     top: 50%;
     left: 50%;
     padding: 40px;
+    text-align: center;
+    width: 450px;
     transform: translate(-50%, -50%) rotate(0);
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    // width: 528px;
-
     background-color: #ffffff;
     border-radius: 4px;
+
+    @media screen and (min-width: 1199px) {
+        width: 528px;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -36,8 +39,8 @@
 }
 
 .main-cross {
-    // display: flex;
-    // width: 30px;
+    display: flex;
+    width: 30px;
     height: 30px;
     position: absolute;
     top: 8px;
@@ -62,8 +65,8 @@
 }
 
 .modal-subtitle {
-    // margin: 0;
-    // margin-bottom: 12px;
+    margin: 0;
+    margin-bottom: 12px;
 
     font-weight: 700;
     font-size: 20px;
@@ -74,7 +77,7 @@
 }
 
 .modal-input {
-    // width: 100%;
+    width: 100%;
     height: 40px;
     padding-left: 45px;
     border-radius: 4px;
@@ -91,10 +94,10 @@
 }
 
 .modal-lable {
-    // display: block;
-    // width: 100%;
+    display: block;
+    width: 100%;
     padding: 0;
-    // margin-bottom: 4px;
+    margin-bottom: 4px;
 
     font-weight: 400;
     font-size: 12px;
@@ -105,12 +108,12 @@
 
 .input-wrapper {
     position: relative;
-    // margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-// .input-wrapper input {
-//     margin-bottom: 0;
-// }
+.input-wrapper input {
+    margin-bottom: 0;
+}
 
 .input-wrapper {
     &:focus-within .modal-input {
@@ -148,10 +151,10 @@
 }
 
 .modal-textarea {
-    // width: 100%;
+    width: 100%;
     height: 120px;
     border-radius: 4px;
-    // margin-bottom: 20px;
+    margin-bottom: 20px;
     resize: none;
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -160,8 +163,8 @@
 
 .modal-textarea::placeholder {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
@@ -180,36 +183,40 @@
     }
 }
 
-// .check-line {
-//     margin-bottom: 30px;
-// }
+.check-line {
+    margin-bottom: 30px;
+}
 
 /* погоджуюся з розсилкою */
 
 .checkbox-agree {
-    // display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;;
     letter-spacing: 0.03em;
     color: var(--second-color);
+
+    @media screen and (min-width: 1199px) {
+        line-height: 1.71;
+    }
 }
 
 .checkbox-agree::before {
     content: '';
-    // margin-right: 8px;
-    // display: flex;
-    // width: 14px;
-    height: 13px;
+    margin-right: 8px;
+    display: flex;
+    width: 16px;
+    height: 15px;
     border: 2px solid #000000;
     border-radius: 2px;
 }
 
 .button-size {
-    // width: 200px;
+    width: 200px;
     height: 50px;
     align-items: center;
     justify-content: center;
@@ -227,5 +234,10 @@
 /*  */
 
 .modal-conditions {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
     color: var(--accent-color);
 }
