@@ -17,18 +17,71 @@
             <nav class="main-nav">
                 <a href="/" class="main-nav__logo">Web<span class="main-nav__name">Studio</span>
                 </a>
-                
                 <ul class="main-nav__site list">
                     <li class="main-nav__item"><a class="main-nav__link current" href="/">Студія</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="/">Контакти</a></li>
                 </ul>
-                <button type="button" class="button-menu">
+                <button 
+                    type="button" 
+                    class="button-menu" 
+                    aria-expanded="false"
+                    aria-controls="main-nav__menu"
+                    data-modal-open
+                    >
                     <svg width="40" haight="40" aria-label="перевмикач мобільного меню">
                         <use class="icom-menu" href="./images/icons.svg/symbol-defs.svg#menu"></use>
                         <use class="icon-cross" href="./images/icons.svg/symbol-defs.svg#close"></use>
                     </svg>
                 </button>
+                <!-- ВСПЛИВАЮЧЕ МЕНЮ -->
+                <!-- <div class="main-nav__menu is-open" id="main-nav__menu">
+                    <button 
+                    class="main-nav__menu__cross" 
+                    type="button" 
+                    data-menu-button
+                    aria-expanded="false"
+                    aria-controls="menu-mobile"
+                    >
+                        <svg 
+                        width="40" 
+                        haight="40" 
+                        aria-label="перевмикач мобільного меню"
+                        >
+                            <use class="icon-cross" href="./images/icons.svg/symbol-defs.svg#close"></use>
+                        </svg>
+                    </button>
+                    <ul class="menu-list">
+                        <li class="menu-list__list-menu">Студія</li>
+                        <li class="menu-list__list-menu">Портфоліо</li>
+                        <li class="menu-list__list-menu">Контакти</li>
+                    </ul>
+                    <ul class="site-auth list">
+                        <li class="site-auth__item">
+                            <a class="main-mail" href="mailto:info@devstudio.com">
+                                <svg class="main-mail__link-icon" width="14" height="10">
+                                    <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="site-auth__item">
+                            <a class="main-tel tel-icon" href="tel:+380961111111">
+                                <svg class="main-tel__link-icon" width="10" height="14">
+                                    <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="glases list">
+                        <li class="bool">Instagram</li>
+                        <li class="bool">Twitter</li>
+                        <li class="bool">Facebook</li>
+                        <li class="bool">LinkedIn</li>
+                    </ul>
+                </div> -->
+                <!--  -->
             </nav>
             <ul class="site-auth list">
                 <li class="site-auth__item">
@@ -488,6 +541,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/menu.js"></script> -->
+    <script src="./js/menu.js"></script>
 </body>
 </html>

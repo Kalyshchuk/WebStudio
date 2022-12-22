@@ -1,8 +1,7 @@
-// .header-nav {
-//     position: relative;
-// }
+
 
 .header-nav {
+    position: relative;
     // tablet screen
     display: flex;
     position: relative;
@@ -12,6 +11,7 @@
 }
 
 .header {
+    position: relative;
     border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
@@ -42,17 +42,17 @@
 
 .main-nav__site {
     display: none;
-    margin: 0;
-    margin-left: 93px;
-    padding-left: 0;
-    
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     // tablet screen
     @media screen and (min-width: 767px) {
         display: flex;
+        margin: 0;
+        margin-left: 93px;
+        padding-left: 0;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
     }
 }
 
@@ -79,18 +79,6 @@
     opacity: 1;
     border-radius: 2px;
 }
-
-// .main-nav__site {
-//     // display: flex;
-//     margin: 0;
-//     margin-left: 93px;
-//     padding-left: 0;
-
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-// }
 
 .main-nav__item {
     display: block;

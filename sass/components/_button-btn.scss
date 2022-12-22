@@ -1,7 +1,7 @@
 .hero-button {
-    // display: flex;
-    // margin-top: 0;
-    // margin-bottom: 50px;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 50px;
     padding-left: 0;
     justify-content: center;
 }
@@ -12,8 +12,8 @@
 }
 
 .hero-button .btn {
-    // display: inline-flex;
-    // margin: 0;
+    display: inline-flex;
+    margin: 0;
     padding: 6px 22px;
     justify-content: center;
     border-radius: 4px;
