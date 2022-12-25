@@ -26,6 +26,10 @@
         display: flex;
         flex-wrap: wrap;
     }
+    // desctop screen
+    @media screen and (min-width: 1199px) {
+        display: flex;
+    }
 }
 
 .team-item .excerpt {
@@ -46,15 +50,19 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    // tablet
-    @media screen and (min-width: 767px) {
-        width: calc((100% - 60px) / 2);
-        margin: 15px;
-    }
 }
 
 .card {
     margin-bottom: 30px;
+    width: 100%;
+    // tablet 
+    @media screen and (min-width: 767px) {
+        width: calc((100% - 60px) / 2);
+        margin-right: 30px;
+    }
+    @media screen and (min-width: 1199px) {
+        width: calc((100% - 120px) / 4);
+    }
 }
 
 .card:last-child {

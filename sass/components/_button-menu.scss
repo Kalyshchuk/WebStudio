@@ -2,11 +2,15 @@
     position: absolute;
     display: inline-flex;
 
-    right: 7.5px;
+    right: 13px;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
+    // screen tablet - desctop
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
 }
 
 .button-menu .icon-cross {
