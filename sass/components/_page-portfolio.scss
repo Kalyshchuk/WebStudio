@@ -22,19 +22,28 @@
 /* список карток */
 
 .card-second {
-    display: flex;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
     padding-left: 0;
-    flex-wrap: wrap;
-
     cursor: pointer;
+    @media screen and (min-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .cards {
     margin-right: 30px;
     margin-bottom: 30px;
+    @media screen and (min-width: 767px) {
+        margin: 0;
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1199px) {
+        width: calc((100% - 60px) / 3);
+    }
 }
 
 .cards:nth-child(3n) {

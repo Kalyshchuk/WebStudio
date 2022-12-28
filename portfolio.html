@@ -19,15 +19,15 @@
                 <a href="/" class="main-nav__logo">Web<span class="main-nav__name">Studio</span>
                 </a>
                 <ul class="main-nav__site list">
-                    <li class="main-nav__item"><a class="main-nav__link" href="/">Студія</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link current" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link current" href="/">Студія</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="/">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="site-auth list">
                 <li class="site-auth__item">
                     <a class="main-mail" href="mailto:info@devstudio.com">
-                        <svg class="main-mail__link-icon" width="16" height="12">
+                        <svg class="main-mail__link-icon" width="14" height="10">
                             <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
@@ -35,14 +35,77 @@
                 </li>
                 <li class="site-auth__item">
                     <a class="main-tel tel-icon" href="tel:+380961111111">
-                        <svg class="main-tel__link-icon" width="10" height="16">
+                        <svg class="main-tel__link-icon" width="10" height="14">
                             <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
                     </a>
                 </li>
             </ul>
+            <!-- кнопка меню -->
+            <button type="button" class="button-menu" is-open aria-expanded="false" aria-controls="main-nav__menu">
+                <svg width="40" haight="40" aria-label="перевмикач мобільного меню">
+                    <use class="icom-menu" href="./images/icons.svg/symbol-defs.svg#menu"></use>
+                    <use class="icon-cross" href="./images/icons.svg/symbol-defs.svg#close"></use>
+                </svg>
+            </button>
+            <!--  -->
         </div>
+        <!-- ВСПЛИВАЮЧЕ МЕНЮ -->
+        <!-- <div class="main-nav__menu" id="main-nav__menu" is-hidden>
+                <div class="container">
+                    <div class="navigation">
+                        <div>
+                            <button 
+                                class="main-nav__menu__cross" 
+                                type="button"
+                                >X -->
+        <!-- <svg width="40" haight="40" aria-label="перевмикач мобільного меню">
+                                    <use class="icon-cross" href="./images/icons.svg/symbol-defs.svg#close"></use>
+                                </svg> -->
+        <!-- </button>
+                            <ul class="menu-list">
+                                <li class="menu-list__main">
+                                    <a class="menu-list__list-menu current" href="">
+                                        Студія
+                                    </a>
+                                </li>
+                                <li class="menu-list__main">
+                                    <a class="menu-list__list-menu" href="">
+                                        Портфоліо
+                                    </a>
+                                </li>
+                                <li class="menu-list__main">
+                                    <a class="menu-list__list-menu" href="">
+                                        Контакти
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="telephone">
+                            <ul class="menu-list__after list">
+                                <li class="menu-list__after__item">
+                                    <a class="main-tel tel-icon" href="tel:+380961111111">
+                                        +38 096 111 11 11
+                                    </a>
+                                </li>
+                                <li class="menu-list__after__item">
+                                    <a class="main-mail" href="mailto:info@devstudio.com">
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="glases list">
+                                <li class="bool">Instagram</li>
+                                <li class="bool">Twitter</li>
+                                <li class="bool">Facebook</li>
+                                <li class="bool">LinkedIn</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!--  -->
     </header>
     <main>
         <section class="filter">
@@ -215,62 +278,58 @@
     </main>
     <footer class="footer">
         <div class="container contacts">
-            <div class="contacts-address">
-                <a href="/" class="logo">Web<span class="title">Studio</span></a>
-                <address class="address">
-                    <ul class="address-list decoration list">
-                        <li><a class="map" href="https://goo.gl/maps/6XQhRdbRvdG7q7pF7">м. Київ, пр-т Лесі Українки,
-                                26</a></li>
-                        <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <div class="contact-studio">
+                <div class="contacts-address">
+                    <a href="/" class="logo">Web<span class="title">Studio</span></a>
+                    <address class="address">
+                        <ul class="address-list decoration list">
+                            <li><a class="map" href="https://goo.gl/maps/6XQhRdbRvdG7q7pF7">м. Київ, пр-т Лесі Українки,
+                                    26</a></li>
+                            <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="freand">
+                    <p class="slogan">приєднуйтесь</p>
+                    <ul class="lists">
+                        <li class="networks">
+                            <a href="" class="instagram">
+                                <svg class="icons-link" width="20" height="20">
+                                    <use href="./images/icons.svg/symbol-defs.svg#icon-instagram1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="networks">
+                            <a href="" class="instagram">
+                                <svg class="icons-link" width="20" height="20">
+                                    <use href="./images/icons.svg/symbol-defs.svg#icon-twitter1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="networks">
+                            <a href="" class="instagram">
+                                <svg class="icons-link" width="20" height="20">
+                                    <use href="./images/icons.svg/symbol-defs.svg#icon-facebook1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="networks">
+                            <a href="" class="instagram">
+                                <svg class="icons-link" width="20" height="20">
+                                    <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin1"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
-            </div>
-            <div>
-                <p class="slogan">приєднуйтесь</p>
-                <ul class="lists">
-                    <li class="networks">
-                        <a href="" class="instagram">
-                            <svg class="icons-link" width="20" height="20">
-                                <use href="./images/icons.svg/symbol-defs.svg#icon-instagram1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="networks">
-                        <a href="" class="instagram">
-                            <svg class="icons-link" width="20" height="20">
-                                <use href="./images/icons.svg/symbol-defs.svg#icon-twitter1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="networks">
-                        <a href="" class="instagram">
-                            <svg class="icons-link" width="20" height="20">
-                                <use href="./images/icons.svg/symbol-defs.svg#icon-facebook1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="networks">
-                        <a href="" class="instagram">
-                            <svg class="icons-link" width="20" height="20">
-                                <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="contacts-social">
                 <p class="slogan">
                     Підпишіться на розсилку
                 </p>
                 <form name="footer-email" class="footer-email">
-                    <input 
-                    type="email" 
-                    class="email" 
-                    name="user-email" 
-                    id="" 
-                    placeholder="E-mail"
-                    >
+                    <input type="email" class="email" name="user-email" id="" placeholder="E-mail">
                     <button type="submit" class="button telegram">
                         Підписатися
                         <svg class="icon-telegram" width="24" height="24">

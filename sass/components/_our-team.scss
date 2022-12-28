@@ -57,10 +57,12 @@
     width: 100%;
     // tablet 
     @media screen and (min-width: 767px) {
+        background-image: url(../../images/team-1x-2x.jpg/team-tabl-1x-1.jpg);
         width: calc((100% - 30px) / 2);
         margin-bottom: 0;
     }
     @media screen and (min-width: 1199px) {
+        background-image: url(../../images/team-1x-2x.jpg/team-desc-1x-1.jpg);
         width: calc((100% - 90px) / 4);
     }
 }
