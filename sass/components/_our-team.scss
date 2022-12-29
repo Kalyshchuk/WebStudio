@@ -2,6 +2,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #F5F4FA;
+    @media screen and (min-width: 1199px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .team-caption {
@@ -13,6 +17,11 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    @media screen and (min-width: 1199px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.16;
+    }
 }
 
 .team-item {
@@ -57,13 +66,19 @@
     width: 100%;
     // tablet 
     @media screen and (min-width: 767px) {
-        background-image: url(../../images/team-1x-2x.jpg/team-tabl-1x-1.jpg);
+        // background-image: url(../../images/team-1x-2x.jpg/team-tabl-1x-1.jpg);
         width: calc((100% - 30px) / 2);
         margin-bottom: 0;
+        .professional {
+            width: 354px;
+        }
     }
     @media screen and (min-width: 1199px) {
-        background-image: url(../../images/team-1x-2x.jpg/team-desc-1x-1.jpg);
+        // background-image: url(../../images/team-1x-2x.jpg/team-desc-1x-1.jpg);
         width: calc((100% - 90px) / 4);
+        .professional {
+                width: 270px;
+            }
     }
 }
 

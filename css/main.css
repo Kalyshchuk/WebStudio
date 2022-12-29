@@ -136,6 +136,8 @@ body {
 }
 
 .main-nav__logo {
+  font-family: "Raleway";
+  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
@@ -965,6 +967,12 @@ img {
   padding-bottom: 60px;
   background-color: #F5F4FA;
 }
+@media screen and (min-width: 1199px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .team-caption {
   margin-top: 0px;
@@ -974,6 +982,13 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1199px) {
+  .team-caption {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .team-item {
@@ -1023,15 +1038,19 @@ img {
 }
 @media screen and (min-width: 767px) {
   .card {
-    background-image: url(../../images/team-1x-2x.jpg/team-tabl-1x-1.jpg);
     width: calc((100% - 30px) / 2);
     margin-bottom: 0;
+  }
+  .card .professional {
+    width: 354px;
   }
 }
 @media screen and (min-width: 1199px) {
   .card {
-    background-image: url(../../images/team-1x-2x.jpg/team-desc-1x-1.jpg);
     width: calc((100% - 90px) / 4);
+  }
+  .card .professional {
+    width: 270px;
   }
 }
 
@@ -1063,6 +1082,16 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+}
+@media screen and (min-width: 767px) {
+  .card .thumb {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .card .thumb {
+    padding-bottom: 30px;
+  }
 }
 
 .element {
@@ -1223,10 +1252,21 @@ img {
   letter-spacing: 0.03em;
   color: var(--logo-main-color);
 }
+@media screen and (min-width: 767px) {
+  .footer .logo {
+    top: 26px;
+    bottom: 26px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
 @media screen and (min-width: 1199px) {
   .footer .logo {
+    top: 24px;
+    bottom: 25px;
     font-size: 26px;
-    line-height: 1.19px;
+    line-height: 1.19;
   }
 }
 
