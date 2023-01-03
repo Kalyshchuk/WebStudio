@@ -1739,6 +1739,10 @@ img {
   display: none;
 }
 
+.button-menu:hover, .button-menu:focus {
+  fill: var(--accent-color);
+}
+
 .main-nav__menu {
   position: fixed;
   display: block;
@@ -1785,6 +1789,10 @@ img {
   background-color: #ffffff;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-nav__menu__cross:hover, .main-nav__menu__cross:focus {
+  fill: var(--accent-color);
 }
 
 .main-icon-cross {

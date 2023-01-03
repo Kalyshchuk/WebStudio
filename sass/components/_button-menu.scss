@@ -25,6 +25,12 @@
     display: none;
 }
 
+.button-menu {
+    &:hover, &:focus {
+        fill: var(--accent-color);
+    }
+}
+
 // випадаюче меню
 
 .main-nav__menu {
@@ -62,6 +68,12 @@
     border: none;
     background-color: #ffffff;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-nav__menu__cross {
+    &:hover, &:focus {
+        fill: var(--accent-color);
+    }
 }
 
 .main-icon-cross {

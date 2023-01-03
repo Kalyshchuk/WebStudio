@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="./сss/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="body">
     <header class="header">
         <div class="container header-nav">
             <nav class="main-nav">
-                <a href="/" class="main-nav__logo">Web<span class="main-nav__name">Studio</span>
+                <a href="./index.html" class="main-nav__logo">Web<span class="main-nav__name">Studio</span>
                 </a>
                 <ul class="main-nav__site list">
-                    <li class="main-nav__item"><a class="main-nav__link current" href="./index.html">Студія</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="/">Портфоліо</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link current" href="/">Студія</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="/">Контакти</a></li>
                 </ul>
             </nav>
@@ -43,7 +42,7 @@
                 </li>
             </ul>
             <!-- кнопка меню -->
-            <button type="button" class="button-menu" is-open aria-expanded="false" aria-controls="main-nav__menu">
+            <button type="button" class="button-menu js-open-menu" aria-expanded="false" aria-controls="main-nav__menu">
                 <svg width="40" haight="40" aria-label="перевмикач мобільного меню">
                     <use class="icom-menu" href="./images/icons.svg/symbol-defs.svg#menu"></use>
                     <use class="icon-cross" href="./images/icons.svg/symbol-defs.svg#close"></use>
@@ -52,59 +51,56 @@
             <!--  -->
         </div>
         <!-- ВСПЛИВАЮЧЕ МЕНЮ -->
-        <!-- <div class="main-nav__menu" id="main-nav__menu" is-hidden>
-                <div class="container">
-                    <div class="navigation">
-                        <div>
-                            <button 
-                                class="main-nav__menu__cross" 
-                                type="button"
-                                >X -->
-        <!-- <svg width="40" haight="40" aria-label="перевмикач мобільного меню">
-                                    <use class="icon-cross" href="./images/icons.svg/symbol-defs.svg#close"></use>
-                                </svg> -->
-        <!-- </button>
-                            <ul class="menu-list">
-                                <li class="menu-list__main">
-                                    <a class="menu-list__list-menu current" href="">
-                                        Студія
-                                    </a>
-                                </li>
-                                <li class="menu-list__main">
-                                    <a class="menu-list__list-menu" href="">
-                                        Портфоліо
-                                    </a>
-                                </li>
-                                <li class="menu-list__main">
-                                    <a class="menu-list__list-menu" href="">
-                                        Контакти
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="telephone">
-                            <ul class="menu-list__after list">
-                                <li class="menu-list__after__item">
-                                    <a class="main-tel tel-icon" href="tel:+380961111111">
-                                        +38 096 111 11 11
-                                    </a>
-                                </li>
-                                <li class="menu-list__after__item">
-                                    <a class="main-mail" href="mailto:info@devstudio.com">
-                                        info@devstudio.com
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="glases list">
-                                <li class="bool">Instagram</li>
-                                <li class="bool">Twitter</li>
-                                <li class="bool">Facebook</li>
-                                <li class="bool">LinkedIn</li>
-                            </ul>
-                        </div>
+        <div class="main-nav__menu js-menu-container is-open" id="main-nav__menu">
+            <div class="container">
+                <div class="navigation">
+                    <div>
+                        <button class="main-nav__menu__cross js-close-menu" type="button">
+                            <svg class="main-icon-cross" width="40" haight="40" aria-label="перевмикач мобільного меню">
+                                <use class="icon-cross" href="./images/icons.svg/symbol-defs.svg#close"></use>
+                            </svg>
+                        </button>
+                        <ul class="menu-list">
+                            <li class="menu-list__main">
+                                <a class="menu-list__list-menu current" href="./index.html">
+                                    Студія
+                                </a>
+                            </li>
+                            <li class="menu-list__main">
+                                <a class="menu-list__list-menu" href="./portfolio.html">
+                                    Портфоліо
+                                </a>
+                            </li>
+                            <li class="menu-list__main">
+                                <a class="menu-list__list-menu" href="">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="menu-list__after list">
+                            <li class="menu-list__after__item">
+                                <a class="main-tel tel-icon" href="tel:+380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="menu-list__after__item">
+                                <a class="main-mail" href="mailto:info@devstudio.com">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navigation-social list">
+                            <li class="navigation-social_menu">Instagram</li>
+                            <li class="navigation-social_menu">Twitter</li>
+                            <li class="navigation-social_menu">Facebook</li>
+                            <li class="navigation-social_menu">LinkedIn</li>
+                        </ul>
                     </div>
                 </div>
-            </div> -->
+            </div>
+        </div>
         <!--  -->
     </header>
     <main>
