@@ -1,7 +1,7 @@
 .section {
     // mobile screen
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 180px;
+    padding-bottom: 180px;
     text-align: center;
     background-color: var(--section-background-color);
     @media (min-device-pixel-ratio: 2),
@@ -13,31 +13,30 @@
     }
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../../images/fone-img.jpg/Header-mob.jpg");
+        url("../images/fone-img.jpg/Header-mob.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../../images/fone-img.jpg/Header-mob1.jpg");
+        url("../images/fone-img.jpg/Header-mob1.jpg");
     
     // tablet screen
     @media screen and (min-width: 767px) {
-        padding-top: 118px;
-        padding-bottom: 118px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url("../../images/fone-img.jpg/Header-tabl.jpg");
+                url("../images/fone-img.jpg/Header-tabl.jpg");
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url("../../images/fone-img.jpg/Header-tabl1.jpg");
+                url("../images/fone-img.jpg/Header-tabl1.jpg");
     }
+    // desctop screen
     @media screen and (min-width: 1199px) {
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url("../../images/fone-img.jpg/Header-desc.jpg");
+                url("../images/fone-img.jpg/Header-desc.jpg");
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url("../../images/fone-img.jpg/Header-desc1.jpg");
+                url("../images/fone-img.jpg/Header-desc1.jpg");
     }
 }
 
@@ -60,8 +59,10 @@
     }
     // desctop screen
     @media screen and (min-width: 1199px) {
-        width: 100%;
+        width: 696px;
         text-align: center;
+        font-size: 44px;
+        line-height: 1.36;
     }
 }
 

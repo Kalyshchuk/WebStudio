@@ -44,7 +44,6 @@
 
 .site-auth__item .main-tel {
     text-decoration: none;
-    // margin-left: 30px;
 }
 
 .site-auth .main-tel {
@@ -73,17 +72,25 @@
 
     color: var(--second-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1199px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
 }
 
 // tablet screen
-@media screen and (min-width: 767px) {
-    .main-mail__link-icon {
+.main-mail__link-icon {
+    @media screen and (min-width: 767px) {
         margin-right: 8px;
         fill: currentColor;
         align-items: center;
     }
+    @media screen and (min-width: 1199px) {
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+    }
 }
-    // margin-right: 10px;
 
 .site-auth__item .main-tel {
     @media screen and (min-width: 767px) {
@@ -99,11 +106,21 @@
         color: var(--second-color);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+    @media screen and (min-width: 1199px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
 }
 
-@media screen and (min-width: 767px) {
-    .main-tel__link-icon {
-            fill: currentColor;
-            margin-right: 8px;
-        }
+.main-tel__link-icon {
+    @media screen and (min-width: 767px) {
+        fill: currentColor;
+        margin-right: 8px;
+    }
+    @media screen and (min-width: 1199px) {
+        margin-right: 10px;
+        height: 16px;
+    }
 }
+
+
