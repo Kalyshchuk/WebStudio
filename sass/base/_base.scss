@@ -9,20 +9,22 @@ body {
 }
 
 .container {
-    // phone screen 480px
-    max-width: 480px;
+    // phone screen < 480px
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-
+    @media screen and (min-width: 479px) {
+        width: 479px;
+    }
     // tablet screen 768px
     @media screen and (min-width: 767px) {
-        max-width: 767px;
+        width: 767px;
     }
     // desctop screen 1200px
     @media screen and (min-width: 1199px) {
-        max-width: 1199px;
+        width: 1199px;
     }
 }
 
