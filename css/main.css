@@ -546,9 +546,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  overflow-y: scroll;
   padding: 40px;
   text-align: center;
-  width: 450px;
+  width: 95%;
   -webkit-transform: translate(-50%, -50%) rotate(0);
           transform: translate(-50%, -50%) rotate(0);
   -webkit-transition: -webkit-transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -557,6 +558,11 @@ body {
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
   border-radius: 4px;
+}
+@media screen and (min-width: 479px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1199px) {
   .modal {
@@ -1090,13 +1096,23 @@ img {
   margin-bottom: 0;
 }
 
+.professional {
+  width: 100%;
+}
+
 .professionals {
-  margin-top: 30px;
-  margin-bottom: 16px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1199px) {
+  .professionals {
+    padding-bottom: 30px;
+  }
 }
 
 .subject {
   margin: 0;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.35;
@@ -1109,21 +1125,10 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
-  padding-bottom: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-}
-@media screen and (min-width: 767px) {
-  .card .thumb {
-    padding-bottom: 24px;
-  }
-}
-@media screen and (min-width: 1199px) {
-  .card .thumb {
-    padding-bottom: 30px;
-  }
 }
 
 .element {
@@ -1795,9 +1800,9 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: orange;
-  -webkit-transform: translateX(125%);
-          transform: translateX(125%);
+  background-color: #ffffff;
+  -webkit-transform: translateX(101%);
+          transform: translateX(101%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);

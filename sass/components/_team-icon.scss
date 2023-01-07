@@ -1,15 +1,8 @@
 .card .thumb {
     display: flex;
     padding: 0;
-    padding-bottom: 30px;
     justify-content: center;
     gap: 10px;
-    @media screen and (min-width: 767px) {
-        padding-bottom: 24px;
-    }
-    @media screen and (min-width: 1199px) {
-        padding-bottom: 30px;
-    }
 }
 
 .element {

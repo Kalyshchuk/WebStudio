@@ -86,20 +86,21 @@
     margin-bottom: 0;
 }
 
-.professionals {
-    margin-top: 30px;
-    margin-bottom: 16px;
+.professional {
+    width: 100%;
 }
 
-// .excerpt {
-//     margin: 0;
-//     margin-bottom: 10px;
-// }
-
+.professionals {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    @media screen and (min-width: 1199px) {
+        padding-bottom: 30px;
+    }
+}
 
 .subject {
     margin: 0;
-
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.35;
