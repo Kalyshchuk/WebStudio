@@ -15,13 +15,11 @@
     <header class="header">
         <div class="container header-nav">
             <nav class="main-nav">
-                <a href="./index.html" class="main-nav__logo">
-                    Web<span class="main-nav__name">
-                        Studio</span>
+                <a href="./index.html" class="main-nav__logo">Web<span class="main-nav__name">Studio</span>
                 </a>
                 <ul class="main-nav__site list">
-                    <li class="main-nav__item"><a class="main-nav__link" href="./index.html">Студія</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link current" href="/">Портфоліо</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link current" href="/">Студія</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="/">Контакти</a></li>
                 </ul>
             </nav>
@@ -44,7 +42,12 @@
                 </li>
             </ul>
             <!-- кнопка меню -->
-            <button type="button" class="button-menu js-open-menu" aria-expanded="false" aria-controls="main-nav__menu">
+            <button 
+            type="button" 
+            class="button-menu js-open-menu" 
+            aria-expanded="false" 
+            aria-controls="main-nav__menu"
+            >
                 <svg width="40" haight="40" aria-label="перевмикач мобільного меню">
                     <use class="icom-menu" href="./images/icons.svg/symbol-defs.svg#menu"></use>
                     <use class="icon-cross" href="./images/icons.svg/symbol-defs.svg#close"></use>
@@ -53,7 +56,7 @@
             <!--  -->
         </div>
         <!-- ВСПЛИВАЮЧЕ МЕНЮ -->
-        <div class="main-nav__menu js-menu-container is-open" id="main-nav__menu">
+        <div class="main-nav__menu js-menu-container" id="main-nav__menu">
             <div class="container">
                 <div class="navigation">
                     <div>
@@ -110,11 +113,21 @@
             <div class="container">
                 <h1 class="visually-hidden">Портфоліо</h1>
                 <ul class="hero-button list">
-                    <li class="filters"><button class="btn current border" type="button">Усі</button></li>
-                    <li class="filters"><button class="btn" type="button">Веб-сайти</button></li>
-                    <li class="filters"><button class="btn" type="button">Додатки</button></li>
-                    <li class="filters"><button class="btn" type="button">Дизайн</button></li>
-                    <li class="filters"><button class="btn" type="button">Маркетинг</button></li>
+                    <li class="filters">
+                        <button class="btn current border" type="button">Усі</button>
+                    </li>
+                    <li class="filters">
+                        <button class="btn" type="button">Веб-сайти</button>
+                    </li>
+                    <li class="filters">
+                        <button class="btn" type="button">Додатки</button>
+                    </li>
+                    <li class="filters">
+                        <button class="btn" type="button">Дизайн</button>
+                    </li>
+                    <li class="filters">
+                        <button class="btn" type="button">Маркетинг</button>
+                    </li>
                 </ul>
                 <ul class="list card-second">
                     <li class="cards">
@@ -338,5 +351,10 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MU06p/yBuuMO/8jI7029YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
